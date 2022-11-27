@@ -212,8 +212,43 @@ function getStory(playerName) {
 
         typemessage:{
             title: "You try to text the person on the first tab.",
-            description:"",
+            description:"After switching tabs you place both of your hands on the keyboard. Your fingers tremble from the stress and you stretch them trying to shake off the feeling. You think about how to approach this for a moment and decide to explain everything you saw sparing no detail. You press send and wait for a response. Suddenly, at the bottom of the screen an indicator flashes followed by the text <i> alexron223 is typing... </i>. As if they were expecting your text the response came in an instant. You clench your fists in agony as you read the response, your eyes fixed on the screen, your mouth slightily agape. You can't initially comprehend the message in front of you so you read it again and again until you have no other choice than to believe it, as if you waited somehow it would change. You have been trapped all along, by the person you can't remember knowing. They admitted to have sent you a link that collects all your personal information from your computer and sends them to none other than the red room operators. You realize that sometime before you wake up you must have clicked the link without knowing the consequences that would follow. As to why Alex would betray your trust and endanger your life, you have no answer yet. Determined to get to the bottom of this you demand an explanation.",
+            choices: [
+                {
+                    choice:"Demand an explanation.",
+                    destination: "explanationscene"
+                },
+                {
+                    choice:"Leave the chat.",
+                    destination: "secondtab"
+                    
+                }
+            ]
 
+        },
+
+        explanationscene:{
+            title:"You demand an explanation.",
+            description:"Your hands type fast, driven by pure rage. You are determined to get to the bottom of this and right know the only one that can help you is alexron223. You hate them, that's certain, but they are your only hope. You stop typing for a moment, trying collect your thoughts. You read the message you've written so far and even though you are absolutely justified you know you shouldn't be so vulgar if you expect them to cooperate. Your index finger moves all the way to the backspace button and after pressing on it all the text disappears. You close your eyes, take a big breath and as calm as one can be in a situation like this you begin once again to type. It doesn't take long to finish and again almost immediately the reply arrives. Fear overwhelms you but you have to know the truth at last. The message is simple, the words familiar yet your conscious takes a moment to make the connection. The good news? There is a way out of your situation. The bad news? The only way you can escape your predicament is to trade your place. You think for a second, the word trade troubles you. Surely they don't mean to sacrifice someone you know. Then you realize that Alex was facing exactly the same dilemma, and they chose to save themselves at your expense. You probably deserved it since you foolishly clicked the link but you shrug off that thought immediately. Now all that is left is for you to make a choice. Do you betray someone you know, possible leading them to their demise, in a vague attempt to survive? Or do you refuse to be a pawn in some strangers sick game, hoping that there is possibly another way out?",
+            choices: [
+                {
+                    choice:"Send the link.",
+                    destination: "saveyourself"
+                },
+                {
+                    choice:"Try to find another way out.",
+                    destination:"usecomputer"
+                }
+            ]
+
+        },
+
+        saveyourself:{
+            title:"You decide to send the link",
+            description:"",
+            choices: [
+                
+            ]
         },
 
         skimpage: {
