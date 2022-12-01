@@ -233,7 +233,7 @@ function getStory(playerName) {
             choices: [
                 {
                     choice:"Send the link.",
-                    destination: "saveyourself"
+                    destination: "last chance"
                 },
                 {
                     choice:"Try to find another way out.",
@@ -243,12 +243,33 @@ function getStory(playerName) {
 
         },
 
-        saveyourself:{
+        lastchance:{
             title:"You decide to send the link",
-            description:"",
+            description:"The time has come and now all that's left is to decide is where to send the link. There is no room for error, you know very well that your life depends on this moment. At first, you think about sending it to someone you dislike, you imagine it's going to be easier on your conscience if you have a <i>good</i> reason. It feels petty though and you cant think of anyone that actually deserves that fate. You can convince yourself that you aren't the bad guy and you have no other choice but in the end it all comes down to your life or someone else's and you are not dying today. <p>Drifting back to the problem at hand you realize that besides the person, you need to make sure that they are someone who will certainly open the link as fast as possible. This narrows down your options a little, so for starters you decide to check to see who is online at the moment. You open your usual messaging platform and then head to the available tab. Since it's late you don't expect to see many people but to your surprise there is in fact only one person online. You gulp as you read the name shown on the screen. It's your best friend. It makes sense since you usually play video games together at this hour. The gravity of the situation comes crushing down on you, you know that they are the perfect candidate, they trust you enough to click to whatever you send them with minimum questions asked, but can you really betray them?</p> Faced with an impossible decision you contemplate on it one last time...",
             choices: [
-                
+                {
+                    choice:"Send the link to your friend.",
+                    destination:"surviveending"
+                },
+                {
+                    choice:"Don't send the link.",
+                    destination:"ending6"
+                }
             ]
+        },
+
+        surviveending:{
+            title:"You survived.",
+            description:"",
+            defaultDestination: "begin",
+            buttonText:"Try again"
+        },
+
+        ending6:{
+            title:"You died.",
+            description:"",
+            defaultDestination: "begin",
+            buttonText:"Try again"
         },
 
         skimpage: {
