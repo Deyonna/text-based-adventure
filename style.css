@@ -21,11 +21,18 @@
     background-color: #a5a5a54d;
 }
 
-.flex-container{
-    display: block;
+.flex-container {
+    display: flex;
     padding: 20vh;
-    /*flex-direction: column;
-    justify-content: center;*/
+    flex-direction: column;
+    justify-content: center;
+    @media only screen and (max-width: 768px) {
+
+        display: flex;
+        padding: 5vh;
+        flex-direction: column;
+        justify-content: center;
+    }
     
 }
 
@@ -36,7 +43,7 @@ body{
 
 #content{
 
-
+    flex-wrap: wrap;
     color:rgba(255, 255, 255, 0.877);
     font-family: "Courier New", monospace;
     
@@ -72,4 +79,3 @@ input[type="radio"] {
 span{
     color:rgba(255, 0, 0, 0.877);
 }
-  
