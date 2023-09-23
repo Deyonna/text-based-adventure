@@ -1,4 +1,4 @@
-button {
+.button {
   background-color: rgba(255, 255, 255, 0.877);
   border-radius: 8px;
   border-width: 0;
@@ -14,30 +14,36 @@ button {
   padding: 5px 12px;
   text-align: center;
   transition: all 200ms;
+  width: max-content;
 }
 
+.button:hover {
+    background-color: #a5a5a54d;
+}
 
-.center{
-    margin: auto;
-    width: 55%;
-    padding: 10px;
+.flex-container{
+    display: flex;
+    padding: 20vh;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
 body{
-    background-color: rgb(0, 0, 0);
+    background: #080808;
+    
 }
 
 #content{
-    margin-top: 100px;
-    background-color: rgb(0, 0, 0);
+
+
     color:rgba(255, 255, 255, 0.877);
     font-family: "Courier New", monospace;
     
 }
 
 b{
-    color:red;
+    color:rgb(255, 0, 0);
 }
 
 
